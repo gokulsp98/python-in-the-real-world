@@ -1,0 +1,351 @@
+<title>Building Applications — Python in the Real World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="theme.css?v=15">
+
+<div class="chrome">
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="chrome-top">
+    <span class="session">Python in the Real World</span>
+    <div class="chrome-right">
+      <button class="menu-toggle" id="menuToggle" aria-label="Jump to topic" aria-expanded="false" aria-controls="menuPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      <span class="session">Building Applications</span>
+    </div>
+  </div>
+  <nav class="menu-panel" id="menuPanel" aria-label="Jump to topic">
+    <a class="menu-link" href="index.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Cover</span></a>
+    <a class="menu-link" href="01-why-programming.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.3" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="6.5"/><line x1="12" y1="17.5" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="6.5" y2="12"/><line x1="17.5" y1="12" x2="21.5" y2="12"/><line x1="5" y1="5" x2="7.8" y2="7.8"/><line x1="16.2" y1="16.2" x2="19" y2="19"/><line x1="19" y1="5" x2="16.2" y2="7.8"/><line x1="7.8" y1="16.2" x2="5" y2="19"/></g></svg><span>01 Why Programming?</span></a>
+    <a class="menu-link" href="02-why-python.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 2.5 C19 2.5 21 4.5 21 7 C21 9.5 16.5 13 14 15 L9.5 10.5 C11.5 8 14 2.5 16.5 2.5 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 10.5 L5.5 15 C4 16.5 4 19 5.5 20.5 C7 22 9.5 22 11 20.5 L14.5 15 Z" fill="currentColor"/></svg><span>02 Why Python?</span></a>
+    <a class="menu-link" href="03-where-python-is-used.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.5" r="4.5" fill="currentColor"/><circle cx="12" cy="9.5" r="1.8" fill="var(--surface)"/><path d="M12 21 C7.5 15.5 5 12.5 5 9.5 a7 7 0 0 1 14 0 c0 3.5 -2.5 6.5 -7 11.5 Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>03 Where Is Python Used?</span></a>
+    <span class="menu-link is-current"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18 M12 3a13 13 0 0 1 0 18 M12 3a13 13 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.4"/></svg><span>04 Building Applications</span></span>
+    <a class="menu-link" href="05-moving-processing-data.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="14" width="4.5" height="7" fill="currentColor"/><rect x="9.75" y="9" width="4.5" height="12" fill="currentColor"/><rect x="16.5" y="4" width="4.5" height="17" fill="currentColor"/></svg><span>05 Moving & Processing Data</span></a>
+    <a class="menu-link" href="06-machine-learning-ai.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.6" fill="currentColor"/><circle cx="4.5" cy="6" r="1.8" fill="currentColor"/><circle cx="19.5" cy="6" r="1.8" fill="currentColor"/><circle cx="4.5" cy="18" r="1.8" fill="currentColor"/><circle cx="19.5" cy="18" r="1.8" fill="currentColor"/><line x1="12" y1="12" x2="4.5" y2="6" stroke="currentColor" stroke-width="1.4"/><line x1="12" y1="12" x2="19.5" y2="6" stroke="currentColor" stroke-width="1.4"/><line x1="12" y1="12" x2="4.5" y2="18" stroke="currentColor" stroke-width="1.4"/><line x1="12" y1="12" x2="19.5" y2="18" stroke="currentColor" stroke-width="1.4"/></svg><span>06 Machine Learning & AI</span></a>
+    <a class="menu-link" href="07-key-takeaways.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="9.8" y1="14.5" x2="14.2" y2="14.5" stroke="currentColor" stroke-width="1.6"/><rect x="9.8" y="15.5" width="4.4" height="3" rx="1" fill="currentColor"/></svg><span>07 Key Takeaways</span></a>
+    <a class="menu-link" href="08-thanks-references.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1.5 15.4,9 23.6,10.1 17.6,15.75 19.1,23.6 12,19.5 4.9,23.6 6.4,15.75 0.4,10.1 8.6,9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>08 Thanks</span></a>
+    <a class="menu-link" href="09-qa.html"><svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H10l-4.5 4.5V16H3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><text x="12" y="13.5" font-size="8" font-weight="700" text-anchor="middle" fill="currentColor">?</text></svg><span>09 Q&A</span></a>
+  </nav>
+</div>
+
+<main class="deck" id="deck">
+
+  <!-- 1: the hook -->
+  <section class="slide" data-title="The hook">
+    <div class="slide-inner" style="max-width: 40rem;">
+      <div class="scene-icon">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="10" y="22" width="38" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="3"/>
+          <polygon points="38,34 38,58 44,52 48,60 52,58 48,50 56,50" fill="currentColor" stroke="var(--bg)" stroke-width="1"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Every app starts with someone writing the code behind it.</p>
+      <h1 class="hero-title">
+        Someone built that "Submit Complaint" button.
+        This time, that someone is
+        <span class="hl hl-tool">you</span>.
+      </h1>
+      <p class="hero-sub">
+        Every form you've filled, every button you've clicked &mdash; a
+        developer sat down and wrote the code that makes it actually do
+        something. Today, that's what we're building: the system behind
+        the ticket.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2: the shape of a web app -->
+  <section class="slide" data-title="The shape of a web app">
+    <div class="slide-inner" style="max-width: 42rem;">
+      <div class="scene-icon tool">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="10" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+          <line x1="17" y1="32" x2="27" y2="32" stroke="currentColor" stroke-width="3"/>
+          <circle cx="32" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+          <line x1="39" y1="32" x2="49" y2="32" stroke="currentColor" stroke-width="3"/>
+          <circle cx="54" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+        </svg>
+      </div>
+      <p class="eyebrow">So what are we actually building?</p>
+      <h2 class="slide-title">A <span class="hl hl-tool">web app</span> is just three things talking to each other.</h2>
+      <p class="lede">
+        You fill out a form &mdash; that's the frontend. It sends a request
+        to a server &mdash; that's the backend. The server decides what to
+        do and saves it &mdash; that's the database. Python's home turf is
+        the middle one.
+      </p>
+      <div class="pipeline">
+        <div class="pipe-step problem-ish">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" stroke-width="1.6"/><line x1="7" y1="12" x2="17" y2="12" stroke="currentColor" stroke-width="1.6"/><rect x="7" y="16" width="8" height="3" rx="1" fill="currentColor"/></svg>
+          Frontend
+        </div>
+        <span class="pipe-connector"></span>
+        <div class="pipe-step final">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="5" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="5" y="10" width="14" height="5" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="5" y="16" width="14" height="5" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="6.5" r="0.8" fill="currentColor"/><circle cx="8" cy="12.5" r="0.8" fill="currentColor"/><circle cx="8" cy="18.5" r="0.8" fill="currentColor"/></svg>
+          Backend (Python)
+        </div>
+        <span class="pipe-connector"></span>
+        <div class="pipe-step problem-ish">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          Database
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3: frontend, briefly -->
+  <section class="slide" data-title="Frontend, briefly">
+    <div class="slide-inner" style="max-width: 40rem;">
+      <div class="scene-icon">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="10" y="8" width="44" height="48" rx="4" fill="none" stroke="currentColor" stroke-width="3"/>
+          <line x1="16" y1="20" x2="48" y2="20" stroke="currentColor" stroke-width="2.4"/>
+          <line x1="16" y1="30" x2="48" y2="30" stroke="currentColor" stroke-width="2.4"/>
+          <rect x="16" y="42" width="20" height="8" rx="2" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="eyebrow">What you actually see</p>
+      <h2 class="slide-title">The frontend is the form itself.</h2>
+      <p class="lede">
+        The complaint box, the submit button, the little spinner while it
+        loads &mdash; HTML, CSS, and JavaScript, running right in your
+        browser. It's not where Python lives, but it's where every ticket
+        begins.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4: backend, where python lives -->
+  <section class="slide" data-title="Backend, where Python lives">
+    <div class="slide-inner" style="max-width: 42rem;">
+      <div class="scene-icon tool">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="14" y="10" width="36" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+          <rect x="14" y="27" width="36" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+          <rect x="14" y="44" width="36" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="21" cy="17" r="2" fill="currentColor"/>
+          <circle cx="21" cy="34" r="2" fill="currentColor"/>
+          <circle cx="21" cy="51" r="2" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="eyebrow">The part nobody sees</p>
+      <h2 class="slide-title">The backend is where Python actually runs.</h2>
+      <p class="lede">
+        The moment you hit submit, the frontend sends that complaint to a
+        server. Python code there checks it, saves it, and sends back a
+        simple reply. No magic &mdash; just receive, check, save, reply.
+      </p>
+      <div class="flow-row">
+        <div class="flow-box io">REQUEST</div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-box">check data&#10;save ticket</div>
+        <span class="flow-arrow">&#8594;</span>
+        <div class="flow-box io">ticket_id: 4471</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5: three python ways -->
+  <section class="slide" data-title="Three Python ways">
+    <div class="slide-inner" style="max-width: 42rem;">
+      <div class="scene-icon">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="7" fill="currentColor"/>
+          <circle cx="12" cy="16" r="5" fill="currentColor"/>
+          <circle cx="52" cy="16" r="5" fill="currentColor"/>
+          <circle cx="12" cy="48" r="5" fill="currentColor"/>
+          <circle cx="52" cy="48" r="5" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Python gives you more than one way to build this</p>
+      <h2 class="slide-title">Three popular choices: Flask, Django, FastAPI.</h2>
+      <p class="lede">We're not going deep on all three &mdash; just so the names aren't strangers later.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9,3 15,3 15,10 20,20 4,20 9,10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="7" y1="3" x2="17" y2="3" stroke="currentColor" stroke-width="1.6"/></svg>
+          <strong>Flask</strong> &mdash; minimal, you build it piece by piece
+        </div>
+        <div class="feature-card">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1.4"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.4"/></svg>
+          <strong>Django</strong> &mdash; batteries included, even a free admin dashboard
+        </div>
+        <div class="feature-card">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13,2 6,13 10,13 9,22 18,10 14,10 16,2" fill="currentColor"/></svg>
+          <strong>FastAPI</strong> &mdash; modern and fast &mdash; the one we're using today
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6: fastapi — what it actually does -->
+  <section class="slide" data-title="FastAPI — what it does">
+    <div class="slide-inner" style="max-width: 40rem;">
+      <div class="scene-icon tool pulse">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <polygon points="34,6 16,36 28,36 24,58 48,28 34,28 42,6" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Let's actually look at the one we picked</p>
+      <h2 class="slide-title"><span class="hl hl-tool">FastAPI</span> &mdash; what it does with that request.</h2>
+      <p class="lede">
+        You describe the shape of a ticket once. FastAPI checks every
+        incoming request against that shape automatically, saves the valid
+        ones, and hands you interactive docs you never had to write.
+      </p>
+      <div class="anchor-row">
+        <span class="anchor-chip tool">Checks data automatically</span>
+        <span class="anchor-chip tool">Free interactive docs</span>
+        <span class="anchor-chip tool">Handles many requests at once</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7: database — OLTP seed -->
+  <section class="slide" data-title="Database — OLTP">
+    <div class="slide-inner" style="max-width: 40rem;">
+      <div class="scene-icon tool">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <ellipse cx="32" cy="14" rx="22" ry="8" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M10 14v18c0 4.4 9.8 8 22 8s22-3.6 22-8V14" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M10 32v18c0 4.4 9.8 8 22 8s22-3.6 22-8V32" fill="none" stroke="currentColor" stroke-width="3"/>
+        </svg>
+      </div>
+      <p class="eyebrow">And that save goes exactly&hellip; here</p>
+      <h2 class="slide-title">Into an <span class="hl hl-tool">OLTP</span> database.</h2>
+      <p class="lede">
+        Every ticket that gets created or updated lands as one row in a
+        database built for fast, cheap, one-at-a-time writes. We're about
+        to spend an entire session on exactly this.
+      </p>
+      <p class="transition-line">Sound familiar? That's next.</p>
+    </div>
+  </section>
+
+  <!-- 8: full pipeline recap -->
+  <section class="slide" data-title="Full pipeline recap">
+    <div class="slide-inner" style="max-width: 46rem;">
+      <div class="scene-icon tool">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="10" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+          <line x1="17" y1="32" x2="27" y2="32" stroke="currentColor" stroke-width="3"/>
+          <circle cx="32" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+          <line x1="39" y1="32" x2="49" y2="32" stroke="currentColor" stroke-width="3"/>
+          <circle cx="54" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Put it together</p>
+      <h2 class="slide-title">One request, three stops.</h2>
+      <div class="pipeline">
+        <div class="pipe-step problem-ish">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" stroke-width="1.6"/><line x1="7" y1="12" x2="17" y2="12" stroke="currentColor" stroke-width="1.6"/><rect x="7" y="16" width="8" height="3" rx="1" fill="currentColor"/></svg>
+          Frontend form
+        </div>
+        <span class="pipe-connector"></span>
+        <div class="pipe-step tool-ish">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13,2 6,13 10,13 9,22 18,10 14,10 16,2" fill="currentColor"/></svg>
+          FastAPI backend
+        </div>
+        <span class="pipe-connector"></span>
+        <div class="pipe-step final">
+          <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          OLTP database
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9: why python, backend too -->
+  <section class="slide" data-title="Why Python, backend too">
+    <div class="slide-inner" style="max-width: 44rem; gap: 1.1rem;">
+      <div class="scene-icon" style="width: 3.4rem; height: 3.4rem;">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <line x1="32" y1="6" x2="32" y2="50" stroke="currentColor" stroke-width="3"/>
+          <line x1="9" y1="17" x2="55" y2="17" stroke="currentColor" stroke-width="3"/>
+          <line x1="9" y1="17" x2="9" y2="29" stroke="currentColor" stroke-width="2"/>
+          <line x1="55" y1="17" x2="55" y2="29" stroke="currentColor" stroke-width="2"/>
+          <circle cx="9" cy="33" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="55" cy="33" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+          <polygon points="32,50 21,61 43,61" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="eyebrow">But couldn't the backend be in another language?</p>
+      <h2 class="slide-title" style="font-size: clamp(1.4rem, 3.4vw, 2rem);">Why Python wins the backend, too.</h2>
+      <div class="compare">
+        <div class="compare-head"><span>Other languages</span><span></span><span>Python</span></div>
+        <div class="compare-row">
+          <div class="compare-cell without">Node.js, Java &mdash; a different language than your data team</div>
+          <span class="compare-arrow">&#8594;</span>
+          <div class="compare-cell with">Python &mdash; the same language your data team already uses</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell without">Java/Spring &mdash; a lot of setup before "hello world"</div>
+          <span class="compare-arrow">&#8594;</span>
+          <div class="compare-cell with">FastAPI &mdash; a working API in a few lines</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell without">Write your own API docs, hope they stay updated</div>
+          <span class="compare-arrow">&#8594;</span>
+          <div class="compare-cell with">FastAPI writes the docs for you, always current</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell without">One language for the backend, another for data &amp; ML</div>
+          <span class="compare-arrow">&#8594;</span>
+          <div class="compare-cell with">One language for the backend, the data, and the model</div>
+        </div>
+      </div>
+      <p class="quote" style="font-size: clamp(1rem, 2.6vw, 1.25rem); margin-top: 0.25rem;">
+        Python didn't win because it's the fastest language to run.<br>It won because it's the one language the whole team already speaks.
+      </p>
+    </div>
+  </section>
+
+  <!-- Demo codebase link page -->
+  <section class="slide demo-link-slide" data-title="Try Ticket Desk">
+    <div class="slide-inner">
+      <div class="scene-icon tool" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M12 18.5h16l5 6H52v23H12z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M22 34h20M22 41h13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="48" cy="17" r="8" fill="var(--bg)" stroke="currentColor" stroke-width="2.5"/>
+          <path d="m45 17 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <p class="eyebrow">REAL-WORLD EXAMPLE 01</p>
+      <h2 class="slide-title">Put the application<br>in your hands.</h2>
+      <p class="lede">Explore the Ticket Desk codebase and follow a support request from the browser through FastAPI into SQLite.</p>
+      <div class="demo-stack" aria-label="Technologies used">
+        <span>HTML · CSS · JavaScript</span><span>FastAPI</span><span>SQLite</span>
+      </div>
+      <a class="demo-link-card" href="https://github.com/gokulsp98/python-in-the-real-world-demos/tree/main/web-application" target="_blank" rel="noopener noreferrer">
+        <span class="demo-link-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-1.9c-3.1.67-3.75-1.31-3.75-1.31-.51-1.3-1.24-1.64-1.24-1.64-1.01-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.08-1.24-5.08-5.53 0-1.22.44-2.22 1.16-3-.12-.29-.5-1.42.11-2.96 0 0 .94-.3 3.06 1.14a10.63 10.63 0 0 1 5.57 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.67.12 2.96.72.78 1.15 1.78 1.15 3.01 0 4.29-2.6 5.24-5.09 5.52.4.35.76 1.03.76 2.08v2.88c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg></span>
+        <span class="demo-link-copy">
+          <small>OPEN THE DEMO CODEBASE · WEB APPLICATION</small>
+          <strong>Ticket Desk</strong>
+          <em>Browse the project on GitHub</em>
+        </span>
+        <span class="demo-link-arrow" aria-hidden="true">&#8599;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 11: closing / hook -->
+  <section class="slide" data-title="Closing">
+    <div class="slide-inner" style="max-width: 40rem;">
+      <div class="scene-icon tool">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="8" y="13" width="48" height="38" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="32" cy="13" r="3.5" fill="var(--bg)" stroke="currentColor" stroke-width="3"/>
+          <circle cx="32" cy="51" r="3.5" fill="var(--bg)" stroke="currentColor" stroke-width="3"/>
+          <line x1="32" y1="21" x2="32" y2="43" stroke="currentColor" stroke-width="3" stroke-dasharray="5,5"/>
+        </svg>
+      </div>
+      <h2 class="slide-title">Every ticket you just built becomes a row. Next: millions of them.</h2>
+      <p class="hook-line">
+        And when leadership wants answers from millions of those rows,
+        that's exactly where our next story picks up.
+      </p>
+      <span class="hook-cta">Moving &amp; Processing Data &#8594;</span>
+    </div>
+  </section>
+
+</main>
+
+<script>window.DECK_NEXT = "05-moving-processing-data.html"; window.DECK_PREV = "03-where-python-is-used.html";</script>
+<script src="deck.js?v=7"></script>
